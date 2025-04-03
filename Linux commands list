@@ -1,0 +1,33 @@
+pwd --> to get path
+whoami --> to display the users
+mkdir dir1 --> to create an directory
+cd/dir  --> to enter inside the dir
+cd .. --> to exit from the current directory
+touch.file name --> to create an empty file
+nano.filename --> to edit the file
+ctrl+s --> to save text
+ctrl+x --> to exit 
+sudo su --> to switch root user
+yum install package name --> to install any package
+yum install git -y --> to install git ( -y is not process the step)
+yum install java-17 -y --> to install java
+nano.Test.java --> to create java file ( case sensitive Test is the class name)
+java.Test.java --> to run java file
+java --version --> to check the version or (packages are installed)
+rm -r * --> to remove all files or dir
+rm -r filename /dirname --> to delete single file/dir
+rm filename --> to delete only file
+cp *  --> to copy
+su ec2-user --> to switch to ec2 user from root user
+or
+cd /home/ec2-user
+ssh -I keypairname.pem username@ public IP address  --> to connect ec2 instance using command prompt
+lsblk  -->     to list block storage
+file -s /dev/xvdf  -->    to check format
+mkdir backup -->     create directory
+mkfs.ext4 /dev/xvdf -->     to format the volume(only for once)
+mountpoint backup(dirname) -->     to check mount point
+mount /dev/xvdf backup(dirname)  -->     to connect ebs volume to dir
+umount dirname -->     to umount the volume
+df -h -->     to check diskspace
+resize2fs /dev/xvdf -->    to extend volume
