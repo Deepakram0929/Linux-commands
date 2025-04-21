@@ -1,0 +1,78 @@
+echo "hello"  --> to print line of text
+pwd  --> to print the current location
+whoami  --> to print current user
+who  --> to list logged in users
+man cmd-name  --> to get information about any command  [eg: man mkdir]
+cmd-name --help  --> to get help with command usage  [eg: mkdir --help]
+
+cd <dir-name>  --> to enter inside the folder or directory
+cd .. --> to come out of directory
+mkdir <folder-name>  --> to create a single folder
+mkdir <folder1-name> <folde2-name> <folde3-name>   -->  to create a multiple folder
+or
+mkdir folder{1..3} 
+mkdir -p dir1/sdir  --> to create directory and subdirectory
+or 
+mkdir -p dir1/{sd1,sd2,sd3}
+ls  --> to list the files
+ls -a  --> to list the hidden files
+ls -l  --> to list the files in details
+ls -lt  --> details with time
+rmdir dir  --> to remove the empty directory
+or 
+rmdir dir1 dir2 dir3
+or
+rmdir dir{1..3}
+rm -r dir  --> to remove non-empty directory
+or
+rm -r dir{dir1,dir2,dir3}
+or 
+rm -rf dir
+
+
+// to create files
+
+touch <filename>  --> to create a single file
+cat <filename>  --> to read file
+touch f{1..5}  --> to create multiple files  [note: ctrl+s to save, ctrl+x to exit]
+or 
+vi <file-name>  
+escape 
+:wq --> to save and exit
+
+date --> to display date and time
+cal --> to display current month and calender
+cal month --> to display current month year calander
+cal month year --> to display current month and year calender
+cal year  --> to display specific year calender
+
+
+
+// Absolute and relative path
+
+mv dir demo --> using only relative
+mv dir1/sd1  --> using only absolute
+mv dir1 demo/sample  --> using relative + absolute
+
+
+copying files/dir
+
+cp --> copy
+cp -r --> to copy recurcive files
+[eg: cp -r demo dir1]
+
+absolute 
+cp /home/ec2-user/demo/sd1 dir1
+cp -r demo dir1/sample/
+cp demo/sd2 dir/sample/ 
+
+
+
+
+mv rename --> to rename files or directory
+[eg: mv dir1 dir2]
+
+relative path --> mv dir1 dir2
+absolute --> mv /home/ec2-user/demo /home/ec2-user/sample
+
+
