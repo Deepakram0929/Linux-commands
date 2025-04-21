@@ -1,0 +1,34 @@
+// user management
+
+cat /etc/passwd  --> to  list the users
+useradd <username>  --> to create user
+or 
+adduser <username> 
+passwd <username> --> to set password
+su <username>  --> to switch user [comes with ec2-user directory]
+or 
+su - <username>  --> only user
+userdel <username>  --> to delete user
+userdel -r <username>  --> to delete user and its directory
+exit  --> to exit from user
+logout  --> to logout user
+
+// Group management
+
+sudo cat /etc/group  --> to list the group
+sudo groupadd <group-name>  --> to create a group
+sudo gpasswd <group-name>   --> to set password to group
+usermod -aG <group-name> <username>   --> to single user to group
+gpasswd -m user1,user2,user3 <group-name>   --> to add multiple users to group
+gpasswd -d <group-name>  --> to delete a group
+gpasswd -d <username> <group-name>  --> to remove a user from a group
+
+sudo nano /etc/sudoers  --> to give root permission to other users to add those users in the sudoers file
+[eg:    user1 ALL = ALL  ALL   ]
+
+
+
+
+
+
+
