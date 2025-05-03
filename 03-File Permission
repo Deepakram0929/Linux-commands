@@ -1,0 +1,15 @@
+read --> 4
+write --> 2
+execute --> 1
+
+owner -->  o
+group --> g
+others --> u
+
+
+
+chmod 777 <file-name>    --> to give permission to specific file
+chmod -r 777 dir1     --> to give permission to directory file
+chown <user-name>:<group-name> <file-name>   --> change owership
+chown -r ower:group dir1  --> to give permission inside the dir/sd1
+ls -l --> to list file persmission
