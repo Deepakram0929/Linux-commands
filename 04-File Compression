@@ -1,0 +1,11 @@
+// tar 
+tar cvf <file-name.tar> <files,files>  -->  to create tar files
+tar xvf <file-name.tar>  --> to extract tar files
+
+// Zip
+zip <file-name.zip> <files,files>  --> to craete zip file
+unzip <file-name.zip>   --> to extract the zip files
+
+// gzip
+gzip <file-name.tar>  --> to create gzip for decompress the files
+gunzip <file-name.zip>  --> to remove the decompression
